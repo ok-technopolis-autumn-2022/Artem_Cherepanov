@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>todos</title>
+</head>
+
+<body>
+  <div class="todoapp">
+    <header class="todoapp_header">
+      <h1 class="todoapp_title">todos</h1>
+    </header>
+    
+    <main class="todoapp_frame" role="main">
+      <section class="todoapp_main-controls">
+        <div class="main-controls_select-all"">
+          <button 
+            class="main-controls_select-all-button"
+            aria-label="Select all tasks">
+            Select all</button>
+        </div>
+        <div class="main-controls_add-item">
+          <input class="main-controls_add-item-input"
+            type="text" placeholder="What needs to be done?"
+            autofocus="autofocus" aria-label="Add new task"/>  
+        </div>
+      </section>
+      
+      <section class="todoapp_tasks">
+        <ul class="todoapp_tasks-list">
+            <li class="todoapp_task-item">
+              <div class="task-item_frame">
+                <input class="task-item_state" type="checkbox"
+                  aria-label="Task: HTML"/>
+                <span class="task-item_text">HTML</span>
+                <button class="task-item_delete"
+                  aria-label="Delete task">
+                  Delete task</button>
+              </div>
+            </li>
+            <li class="todoapp_task-item">
+              <div class="task-item_frame">
+                <input class="task-item_state" type="checkbox"
+                  aria-label="Task: CSS"/>
+                <span class="task-item_text">CSS</span>
+                <button class="task-item_delete"
+                  aria-label="Delete task">
+                  Delete task</button>
+              </div>
+            </li>
+            <li class="todoapp_task-item">
+              <div class="task-item_frame">
+                <input class="task-item_state" type="checkbox"
+                  aria-label="Task: JS"/>
+                <span class="task-item_text">JS</span>
+                <button class="task-item_delete"
+                  aria-label="Delete task">
+                  Delete task</button>
+              </div>
+            </li>
+            <li class="todoapp_task-item">
+              <div class="task-item_frame">
+                <input class="task-item_state" type="checkbox"
+                  aria-label="Task: JS tools"/>
+                <span class="task-item_text">JS tools</span>
+                <button class="task-item_delete"
+                  aria-label="Delete task">
+                  Delete task</button>
+              </div>
+            </li>
+          </ul>
+      </section>
+    </main>
+    
+    <footer class="todoapp_footer" role="complementary"
+      aria-label="Supporting section">
+      <div class="footer_number-of-tasks">
+        <span class="number-of-tasks-text"
+          aria-label="Number of tasks: 4">4 items left</span>
+      </div>
+      <div class="footer_actions">
+        <input class="actions_action-state" type="radio"
+          id="actionChoice1" name="action"
+          value="all" aria-label="Show all tasks"/>
+        <label class="action-state_text"
+          for="actionChoice1">All</label>
+        <input class="actions_action-state" type="radio" 
+          id="actionChoice2" name="action"
+          value="active" aria-label="Show active tasks"/>
+        <label class="action-state_text" 
+          for="actionChoice2">Active</label>
+        <input class="actions_action-state"type="radio" 
+          id="actionChoice3" name="action"
+          value="completed" aria-label="Show completed tasks"/>
+        <label class="action-state_text" 
+          for="actionChoice3">Completed</label>
+      </div>
+      <div class="footer_clear-completed">
+        <button class="footer_clear-completed-button"
+          aria-label="Clear completed tasks">Clear 
+          completed</button>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>
